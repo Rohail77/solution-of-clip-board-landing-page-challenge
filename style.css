@@ -1,0 +1,392 @@
+/* font-family: 'Bai Jamjuree', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: hsl(201, 11%, 66%);
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+h1, h2 {
+    color: hsl(210, 10%, 33%);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+img {
+    max-width: 100%;
+}
+
+/******************
+    HEADER
+********************/
+
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-image: url(images/bg-header-mobile.png);
+}
+
+.download-btns-div {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5em auto 0 auto;
+    max-width: 337.5px;
+}
+
+.header h1 {
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+    margin-bottom: 0.6em;
+}
+
+.header p {
+    font-size: 1.1rem;
+    max-width: 612px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    margin: 7em 0 3em 0;
+}
+
+.download-btns-div a {
+    padding: 0.9em 3em;
+    border-radius: 5em;
+}
+
+.ios-download {
+    background-color: hsl(171, 66%, 44%);
+    border-bottom: 3px solid hsl(171, 68%, 35%);
+    border-top: 1.2px solid hsl(171, 68%, 35%);
+}
+
+.ios-download:hover {
+    opacity: 0.8;
+}
+
+.mac-download {
+    margin-top: 1.35em;
+    background-color: hsl(233, 100%, 69%);
+    border-bottom: 3px solid hsl(233, 68%, 56%);
+    border-top: 1.2px solid hsl(233, 68%, 56%);
+}
+
+.mac-download:hover {
+    opacity: 0.8;
+}
+
+
+/******************
+    MIDDLE
+********************/
+
+.keep-track-heading {
+    margin: 9em auto 4em auto;
+    width: 90%;
+    max-width: 684px !important;
+}
+
+.access-clipboard-heading {
+    margin: 10em auto 3.5em auto;
+
+}
+
+.app-details-div {
+    width:90%;
+    margin: 0 auto;
+}
+
+.advantage-info {
+    max-width: 661.5px;
+}
+
+.advantage-info h2 {
+    margin-bottom: 0.6em;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+}
+
+.app-detail {
+    margin: 3em auto;
+    max-width: 418.5px;
+}
+
+.app-detail h2 {
+    margin-bottom: 0.5em;
+    font-size: 1.5rem;
+}
+
+.supercharge-heading {
+    margin: 6em auto 5em auto;
+}
+
+.feature {
+    max-width: 383.5px;
+    margin: 0 auto;
+}
+
+.feature + .feature {
+    margin-top: 3em;
+}
+
+.feature h2 {
+    margin: 1.1em 0 0.8em 0;
+}
+
+.company-logos {
+    margin: 7.6em 0 0 0;
+}
+
+.logo-div + .logo-div {
+    margin-top: 3.2em;
+}
+
+.below-logos-div {
+    margin: 10em auto 0 auto;
+}
+
+/******************
+    FOOTER
+********************/
+
+.footer {
+    background-color: hsl(0, 0%, 91%);
+    margin-top: 9.5em;
+    padding: 3em 0;
+}
+
+.footer a {
+    color: hsl(210, 10%, 33%);
+}
+
+.logo-in-footer {
+    height: 60px;
+    width: 60px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5em 0;
+}
+
+.footer-links a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.footer-links a + a {
+    margin-top: 2em;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a + a {
+    margin-left: 1.7em;
+}
+
+.social-links img:hover {
+    filter: invert(58%) sepia(76%) saturate(410%) hue-rotate(122deg) brightness(91%) contrast(89%);
+}
+
+
+
+
+
+@media (min-width:900px) {
+
+    .container {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    /******************
+    HEADER
+    ********************/
+
+    .header {
+        background-position: center;
+        background-image: url(images/bg-header-desktop.png);
+    }
+    
+    .download-btns-div {
+        flex-direction: row;
+        justify-content: center;
+        max-width: initial;
+    }
+    
+    .header h1 {
+        font-size: 2.9rem;
+    }
+    
+    .mac-download {
+        margin: 0 0 0 1.35em;
+    }
+
+    /******************
+        MIDDLE
+    ********************/
+
+    .advantage-info h2 {
+        margin-bottom: 0.7em;
+    }
+
+    .access-clipboard-heading {
+        margin: 7em auto 5.5em auto;
+    }
+
+    .supercharge-heading {
+        margin: 4em auto 4em auto;
+    }
+
+    .app-details-txt-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .app-details-div {
+        width: 80%;
+    }
+
+    .app-detail {
+        width: 30%;
+        margin: 1.8em auto;
+    }
+
+    .app-detail h2 {
+        font-size: 1.5rem;
+    }
+
+    .app-features {
+        display: flex;
+        align-items: baseline;
+        max-width: 1270px;
+        margin: 0 auto;
+    } 
+
+    .feature + .feature {
+        margin: 0 0 0 3em;
+    }
+
+    .feature {
+        max-width: 395px;
+    }
+
+    .company-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .logo-div {
+        line-height: 5em;
+        margin: 0 2em 0 2em;
+    }
+
+    .logo-div + .logo-div {
+        margin: 0 2em 0 2em;
+    }
+
+    .below-logos-div {
+        margin: 6em auto 0 auto;
+    }
+
+
+    /******************
+    FOOTER
+********************/
+
+.footer {
+    text-align: left;
+    padding: 0 11%;
+}
+
+.footer-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-links {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 78px;
+    width: 60%;
+}
+
+.footer-links a {
+    margin: 0.25em 0 0.25em 0;
+}
+
+.footer-links a + a {
+    margin: 0.25em 0 0.25em 0;
+}
+
+.logo-in-footer {
+    margin-bottom: 0.75em;
+}
+
+}
+
+
+
+
+@media (min-width:1156px) {
+
+    .app-details-div {
+        margin: 0 auto 0 0;
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: center;
+        width: 90%;
+    }
+
+    .app-details-txt-div {
+        flex-direction: column;
+    }
+
+    .app-detail {
+        width: initial;
+    }
+
+    .app-details-div img {
+        margin-left: -2em;
+    }
+
+    .app-details-txt-div {
+        margin-left: 6em;
+    }
+
+    .app-detail {
+        max-width: 380.16px;
+    }
+}
